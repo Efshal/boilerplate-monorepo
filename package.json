@@ -1,12 +1,19 @@
 {
   "name": "boilerplate-monorepo",
   "version": "0.0.0",
+  "main": "main.js",
   "scripts": {
     "ng": "ng",
-    "start": "ng serve",
-    "build": "ng build",
     "watch": "ng build --watch --configuration development",
-    "test": "ng test"
+    "test": "ng test",
+    "start:boilerplate-monorepo": "ng serve boilerplate-monorepo",
+    "start": "npm-run-all -p electron:serve start:boilerplate-monorepo",
+    "electron:serve-tsc": "tsc -p tsconfig.serve.json",
+    "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && npx electron . --serve",
+    "postinstall": "electron-builder install-app-deps",
+    "build": "npm run electron:serve-tsc && ng build boilerplate-monorepo --base-href ./",
+    "build:prod": "npm run build -- -c production",
+    "electron:package": "npm run build:prod && electron-builder build"
   },
   "private": true,
   "dependencies": {
@@ -18,8 +25,11 @@
     "@angular/platform-browser": "~12.2.0",
     "@angular/platform-browser-dynamic": "~12.2.0",
     "@angular/router": "~12.2.0",
+    "electron-reload": "^2.0.0-alpha.1",
+    "npm-run-all": "^4.1.5",
     "rxjs": "~6.6.0",
     "tslib": "^2.3.0",
+    "wait-on": "^6.0.0",
     "zone.js": "~0.11.4"
   },
   "devDependencies": {
@@ -28,6 +38,8 @@
     "@angular/compiler-cli": "~12.2.0",
     "@types/jasmine": "~3.8.0",
     "@types/node": "^12.11.1",
+    "electron": "^16.0.4",
+    "electron-builder": "^22.14.5",
     "jasmine-core": "~3.8.0",
     "karma": "~6.3.0",
     "karma-chrome-launcher": "~3.1.0",
