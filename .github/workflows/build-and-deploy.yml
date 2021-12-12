@@ -1,7 +1,8 @@
 name: Build
 
-on: push
-  branches: [ try2 ]
+on: 
+  push:
+    branches: [ try2 ]
 
 jobs: 
   make-build:
