@@ -13,8 +13,8 @@ jobs:
         uses: actions/checkout@v1
       - name: Setup npm package
         run: npm install
-      - name: Build Using npm
-        run: npm run electron:package
+#       - name: Build Using npm
+#         run: npm run electron:package
       - name: Build android
         run: npx cap add android
       - name: Build ios
