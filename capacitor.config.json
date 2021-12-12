@@ -1,0 +1,13 @@
+{
+  "appId": "com.boilerplate.game",
+  "appName": "cross-platform-game",
+  "bundledWebRuntime": false,
+  "npmClient": "npm",
+  "webDir": "dist/boilerplate-monorepo",
+  "plugins": {
+    "SplashScreen": {
+      "launchShowDuration": 0
+    }
+  },
+  "cordova": {}
+}
