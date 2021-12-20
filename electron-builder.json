@@ -1,5 +1,5 @@
 {
-  "productName": "boiler-plate",
+  "productName": "boilerplate-monorepo",
   "directories": {
     "output": "release/"
   },
@@ -20,15 +20,15 @@
     "!tslint.json"
   ],
   "win": {
-    "icon": "dist/boiler-plate/assets/icons",
+    "icon": "dist/boilerplate-monorepo/assets/icons",
     "target": ["portable"]
   },
   "mac": {
-    "icon": " dist/boiler-plate/assets/icons",
+    "icon": " dist/boilerplate-monorepo/assets/icons",
     "target": ["dmg"]
   },
   "linux": {
-    "icon": " dist/boiler-plate/assets/icons",
+    "icon": " dist/boilerplate-monorepo/assets/icons",
     "target": ["AppImage"]
   }
 }
