@@ -12,6 +12,7 @@
     "electron:serve-tsc": "tsc -p tsconfig.serve.json",
     "electron:serve": "wait-on tcp:4200 && npm run electron:serve-tsc && npx electron . --serve",
     "postinstall": "electron-builder install-app-deps",
+    "build:firebase": "ng build",
     "build": "npm run electron:serve-tsc && ng build boilerplate-monorepo --base-href ./",
     "build:prod": "npm run build -- -c production",
     "electron:package": "npm run build:prod && electron-builder --linux snap"
