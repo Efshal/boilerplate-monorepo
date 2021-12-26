@@ -15,7 +15,8 @@ run snapcraft init to setup snap/snapcraft.yaml
 ```bash
 snapcraft init
 ```
-![snapcraft yaml](https://user-images.githubusercontent.com/42158443/147403528-eac9be0a-f3ba-4de2-ad34-38daae020ca9.png)
+![snapcraft yaml](https://user-images.githubusercontent.com/42158443/147403582-8d7588b8-9a8a-4aa7-bd16-be28ef5ba22f.png)
+
 
 ## Usage
 
