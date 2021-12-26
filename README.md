@@ -1,27 +1,41 @@
-# BoilerplateMonorepo
+# Foobar
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 12.2.13.
+Linux Electron App build and Snapcraft Release
+## Installation
 
-## Development server
+clone the repo 
+```bash
+git clone https://github.com/Efshal/boilerplate-monorepo.git
+```
+run npm install
+```bash
+npm install
+```
+run snapcraft init to setup snap/snapcraft.yaml
+```bash
+snapcraft init
+```
+![snapcraft yaml](https://user-images.githubusercontent.com/42158443/147403528-eac9be0a-f3ba-4de2-ad34-38daae020ca9.png)
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
+## Usage
 
-## Code scaffolding
+```python
+import foobar
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+# returns 'words'
+foobar.pluralize('word')
 
-## Build
+# returns 'geese'
+foobar.pluralize('goose')
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+# returns 'phenomenon'
+foobar.singularize('phenomena')
+```
 
-## Running unit tests
+## Contributing
+Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+Please make sure to update tests as appropriate.
 
-## Running end-to-end tests
-
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+## License
+[MIT](https://choosealicense.com/licenses/mit/)
