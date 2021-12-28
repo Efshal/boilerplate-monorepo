@@ -123,7 +123,7 @@ Following steps need to be followed:
 
 To connect fastlane with Play Console, you need to provide appropriate credentials in the form of an API key file. This file contains the credentials that fastlane will use to connect to your Google Play Console account and make updates on your behalf.
 
-To create a key file, follow these steps from the fastlane official documentation. Once your key file is created, you can connect fastlane with your Google Play Console APIs.
+To create a key file, follow these steps from the [fastlane official documentation](https://docs.fastlane.tools/getting-started/android/setup/#collect-your-google-credentials). Once your key file is created, you can connect fastlane with your Google Play Console APIs.
 
 1. You can validate your key using the command:
 ```bash
