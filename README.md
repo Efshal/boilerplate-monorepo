@@ -95,3 +95,12 @@ On running `firebase init` a list of options will appear
 Select `Firebase Hosting`
 
 ![image](https://user-images.githubusercontent.com/42158443/147598089-c60fa81c-57b8-4f22-b88d-5adcbade02be.png)
+
+## Android Build, Signing, and PlayStore Deployment
+
+### Android Deployment
+
+Now at this stage we are ready with the Android build after going through the overall process from generating the key to signed the build release.In order to deploy the build to the Google play console, we used Fastlane (The easiest way to build and release mobile apps.fastlane handles tedious tasks so you don’t have to.)
+Following steps need to be followed:
+
+#### Configuration
