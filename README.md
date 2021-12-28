@@ -164,8 +164,9 @@ fastlane increment_vc
 2. You need to first upload the aab file to Google play manually, following all the policy guidelines, so that Fastlane can handle the automating the deployment to Google Play after that.
 3. In this case aab file manually uploaded to Internal Testing , Please make sure the package name should be defined in aab file must be similar to when initializing the fastlane init at the very start.
 
-![image](https://user-images.githubusercontent.com/42158443/147601069-2299c7ed-c902-4062-990e-a9b94f3689ad.png)
+![image](https://user-images.githubusercontent.com/42158443/147601759-d11400b5-c44e-431d-8fcc-aad573f6c746.png)
 
+  
 4. Don't worry you can change that also AndroidManifest.xml (android/app/src/main/AndroidManifest.xml) file under the tag “package”, in build.gradle (android/app/build.gradle) file under the tag “applicationId”, and in Appfile (android/fastlane/Appfile) file under the tag “package_name”.
 
 ![carbon(4)](https://user-images.githubusercontent.com/42158443/147601638-aaf61ae3-0224-483f-b405-3dea88b13687.png)
