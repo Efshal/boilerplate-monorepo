@@ -104,7 +104,14 @@ Answer these questions as done below:
 
 ![image](https://user-images.githubusercontent.com/42158443/147604151-9acdd36f-9544-4af5-931c-3962042f676f.png)
 
+
+Run
+ ```bash
+  firebase deploy
+ ```
+Select Existing Project option and then select project you made earlier on firebase website.
   
+Your Application will be deployed
   
     
 ## Android Build, Signing, and PlayStore Deployment
