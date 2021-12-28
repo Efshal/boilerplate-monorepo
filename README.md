@@ -58,3 +58,10 @@ e.g(mysnap_0.0.0_amd64.snap):
 ```bash
 snapcraft upload --release=stable <snap-file-name>.snap
 ```
+  
+Congratulations, your snap has now been released and is available on the Snap Store
+You can also install your app via:
+
+```bash
+sudo snap install <app-name>
+```
