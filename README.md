@@ -94,4 +94,4 @@ On running `firebase init` a list of options will appear
 
 Select `Firebase Hosting`
 
-![image](https://user-images.githubusercontent.com/42158443/147596909-e6dd3802-18f4-4c48-bca4-c8f24077dbf8.png)
+![image](https://user-images.githubusercontent.com/42158443/147598089-c60fa81c-57b8-4f22-b88d-5adcbade02be.png)
