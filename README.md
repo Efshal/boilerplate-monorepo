@@ -68,16 +68,30 @@ sudo snap install <app-name>
 
   
 ## Web Application build and Firebase Deployment
-  
+
+Build your project first
+
+```bash
+ng build
+```
+ 
+ 
 Create a new project on Firebase
 
 Click on Hosting section in Side Panel
+
 Then Click Get Started
+  
 ![image](https://user-images.githubusercontent.com/42158443/147596048-993d7c5c-959d-4af2-8d18-0eaa2389fa5b.png)
 
 Follow Steps to Setup Firebase Hosting for your Project
+  
 Do not tick this option
+
 ![image](https://user-images.githubusercontent.com/42158443/147596223-291386d3-51d3-4865-8b6e-1f474ee30023.png)
 
 On running `firebase init` a list of options will appear
+
 Select `Firebase Hosting`
+
+![image](https://user-images.githubusercontent.com/42158443/147596909-e6dd3802-18f4-4c48-bca4-c8f24077dbf8.png)
