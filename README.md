@@ -140,9 +140,9 @@ json_key_file("./api-key.json")
 Open Fastfile and write lanes for testing, increment version code, and deploying.
 
 ##### Test
-![carbon(2)](https://user-images.githubusercontent.com/42158443/147600235-d6ab729f-8e6b-4eb8-a0e7-70795d623cd7.png)
+![carbon(8)](https://user-images.githubusercontent.com/42158443/147602400-a548b75e-80e3-4bb4-8b77-76128c9938f8.png)
 
-  
+
 Run 
 ```bash
 fastlane test
@@ -157,9 +157,9 @@ fastlane add_plugin increment_version_code
 ```
   
 Once the plugin is installed, open your Fastfile and add a lane to increment the version code automatically:
-
-![carbon(3)](https://user-images.githubusercontent.com/42158443/147600633-4c2ab2d5-0f96-4e2b-b307-fe4948167734.png)
   
+![carbon(7)](https://user-images.githubusercontent.com/42158443/147602359-1af4ee28-0568-4b53-a83b-cf329a04e51b.png)
+
   
 Run 
 ```bash
