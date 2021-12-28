@@ -164,10 +164,28 @@ fastlane increment_vc
 2. You need to first upload the aab file to Google play manually, following all the policy guidelines, so that Fastlane can handle the automating the deployment to Google Play after that.
 3. In this case aab file manually uploaded to Internal Testing , Please make sure the package name should be defined in aab file must be similar to when initializing the fastlane init at the very start.
 
-  ![image](https://user-images.githubusercontent.com/42158443/147600907-e44ccf21-9355-4377-a79a-5bb23bcfdd1d.png)
+![image](https://user-images.githubusercontent.com/42158443/147601069-2299c7ed-c902-4062-990e-a9b94f3689ad.png)
+
+4. Don't worry you can change that also AndroidManifest.xml (android/app/src/main/AndroidManifest.xml) file under the tag “package”, in build.gradle (android/app/build.gradle) file under the tag “applicationId”, and in Appfile (android/fastlane/Appfile) file under the tag “package_name”.
+
+![carbon(4)](https://user-images.githubusercontent.com/42158443/147601638-aaf61ae3-0224-483f-b405-3dea88b13687.png)
 
 
-
-
+Run 
+```bash
+fastlane deploy
+```
   
+5. After Successful completion of fastlane
+
+![image](https://user-images.githubusercontent.com/42158443/147601206-3b63e1bb-e782-408c-8793-03b79d1cb354.png)
+
+
+6. You can direct to Google play console dashboard to see the recent release published through fastlane.
+  
+![image](https://user-images.githubusercontent.com/42158443/147601263-e8ad1539-7520-4026-8161-2b61d6bc8d45.png)
+
+![image](https://user-images.githubusercontent.com/42158443/147601473-6b710499-ab7e-4719-9d84-855008bc2eb8.png)
+7. That’s it, we have successfully managed the application.
+
  
