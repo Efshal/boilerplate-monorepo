@@ -186,7 +186,7 @@ fastlane deploy
   
 ![image](https://user-images.githubusercontent.com/42158443/147601263-e8ad1539-7520-4026-8161-2b61d6bc8d45.png)
 
-![image](https://user-images.githubusercontent.com/42158443/147601473-6b710499-ab7e-4719-9d84-855008bc2eb8.png)
+
 7. That’s it, we have successfully managed the application.
 
  
