@@ -103,4 +103,71 @@ Select `Firebase Hosting`
 Now at this stage we are ready with the Android build after going through the overall process from generating the key to signed the build release.In order to deploy the build to the Google play console, we used Fastlane (The easiest way to build and release mobile apps.fastlane handles tedious tasks so you don’t have to.)
 Following steps need to be followed:
 
+
 #### Configuration
+
+1. Firstly install the Firebase in respective OS (mac/windows/linux).
+2. Ruby must be installed in the system for installing fastlane init.
+3. After setting up the fastlane package, now you are good to go towards the real essence of fastlane.
+4. Initialize the fastlane using “fastlane init” in the Android folder present in the root of the project for e.g root/Android/.
+5. You will see the directory fastlane having 2 files named Appfile and Fastfile.
+  
+#### Creating Play Console credentials
+
+To connect fastlane with Play Console, you need to provide appropriate credentials in the form of an API key file. This file contains the credentials that fastlane will use to connect to your Google Play Console account and make updates on your behalf.
+
+To create a key file, follow these steps from the fastlane official documentation. Once your key file is created, you can connect fastlane with your Google Play Console APIs.
+
+1. You can validate your key using the command:
+```bash
+fastlane run validate_play_store_json_key json_key:/path/to/your/downloaded/file.json
+```
+  
+2. Next, add your key file to fastlane. Open the fastlane/Appfile and update the json_key_file property with your key file location.
+```bash
+json_key_file("./api-key.json")
+```
+  
+##### Writing Fastlane actions and lane:
+
+Open Fastfile and write lanes for testing, increment version code, and deploying.
+
+##### Test
+![carbon(2)](https://user-images.githubusercontent.com/42158443/147600235-d6ab729f-8e6b-4eb8-a0e7-70795d623cd7.png)
+
+  
+Run 
+```bash
+fastlane test
+```
+
+#### Increment version code:
+
+Versioning is much easier with fastlane; you simply need to add the plugin shown below:
+
+```bash
+fastlane add_plugin increment_version_code
+```
+  
+Once the plugin is installed, open your Fastfile and add a lane to increment the version code automatically:
+
+![carbon(3)](https://user-images.githubusercontent.com/42158443/147600633-4c2ab2d5-0f96-4e2b-b307-fe4948167734.png)
+  
+  
+Run 
+```bash
+fastlane increment_vc
+  ```
+  
+#### Deploy
+1. Google Play console changed its policy of accepting only AAB file rather than APK file, so the bundleRelease command will generate the aab file.
+2. You need to first upload the aab file to Google play manually, following all the policy guidelines, so that Fastlane can handle the automating the deployment to Google Play after that.
+3. In this case aab file manually uploaded to Internal Testing , Please make sure the package name should be defined in aab file must be similar to when initializing the fastlane init at the very start.
+
+  ![image](https://user-images.githubusercontent.com/42158443/147600907-e44ccf21-9355-4377-a79a-5bb23bcfdd1d.png)
+
+
+
+
+  
+ 
