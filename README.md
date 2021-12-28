@@ -66,6 +66,9 @@ You can also install your app via:
 sudo snap install <app-name>
 ```
 
+
+
+
   
 ## Web Application build and Firebase Deployment
 
@@ -96,6 +99,10 @@ Select `Firebase Hosting`
 
 ![image](https://user-images.githubusercontent.com/42158443/147598089-c60fa81c-57b8-4f22-b88d-5adcbade02be.png)
 
+  
+  
+  
+    
 ## Android Build, Signing, and PlayStore Deployment
 
 ### Android Deployment
