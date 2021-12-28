@@ -99,7 +99,11 @@ Select `Firebase Hosting`
 
 ![image](https://user-images.githubusercontent.com/42158443/147598089-c60fa81c-57b8-4f22-b88d-5adcbade02be.png)
 
-  
+
+Answer these questions as done below:
+
+![image](https://user-images.githubusercontent.com/42158443/147604151-9acdd36f-9544-4af5-931c-3962042f676f.png)
+
   
   
     
