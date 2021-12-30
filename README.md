@@ -1,5 +1,6 @@
 <p align="center">
 <a href="https://github.com/Efshal/boilerplate-monorepo/actions/workflows/snapcraft-publish.yml"><img src="https://img.shields.io/badge/snapcraft--publish--action-passing-2ea44f?logo=Github+Actions&logoColor=gold" alt="snapcraft-publish-action - passing"></a>
+  
 <a href="https://github.com/Efshal/boilerplate-monorepo/blob/main/.github/workflows/web-firebase-deployment.yml"><img src="https://img.shields.io/badge/web--firebase--deployment--action-passing-2ea44f?logo=Github+Actions&logoColor=gold" alt="web-firebase-deployment-action - passing"></a>
 </p>
 
