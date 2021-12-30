@@ -1,6 +1,7 @@
 <p align="center">
 <a href="https://github.com/Efshal/boilerplate-monorepo/actions/workflows/snapcraft.yml"><img src="https://img.shields.io/badge/snapcraft--build--action-passing-2ea44f?logo=Github+Actions" alt="snapcraft-build-action - passing"></a>
 </p>
+
 # Guide
 
 ## Linux Electron App build and Snapcraft Release
