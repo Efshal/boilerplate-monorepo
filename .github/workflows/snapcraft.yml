@@ -1,4 +1,4 @@
-name: snapcraft.yml
+name: Snapcraft Publish Action
 
 on: 
   push:
