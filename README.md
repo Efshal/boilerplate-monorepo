@@ -1,3 +1,6 @@
+<p align="center">
+  <a href="https://github.com/snapcore/action-publish/actions"><img alt="snapcraft-publish-action status" src="https://github.com/snapcore/action-publish/workflows/build-test/badge.svg"></a>
+</p>
 # Guide
 
 ## Linux Electron App build and Snapcraft Release
