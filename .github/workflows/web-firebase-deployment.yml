@@ -1,4 +1,4 @@
-name: Firebase Deploy2
+name: Web Firebase Deployment
 
 on:
   push:
