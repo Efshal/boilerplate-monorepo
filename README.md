@@ -1,6 +1,6 @@
 <p align="center">
-<a href="https://github.com/Efshal/boilerplate-monorepo/actions/workflows/snapcraft.yml"><img src="https://img.shields.io/badge/snapcraft--build--and--release--action-passing-2ea44f?logo=Github+Actions&logoColor=yellow" alt="snapcraft-build-and-release-action - passing"></a>
-<a href="https://github.com/Efshal/boilerplate-monorepo/blob/main/.github/workflows/web-build-and-firebase-release.yml"><img src="https://img.shields.io/badge/web--build--and--release--action-passing-2ea44f?logo=Github+Actions&logoColor=yellow" alt="web-build-and-release-action - passing"></a>
+<a href="https://github.com/Efshal/boilerplate-monorepo/actions/workflows/snapcraft.yml"><img src="https://img.shields.io/badge/snapcraft--build--and--release--action-passing-2ea44f?logo=Github+Actions&logoColor=gold" alt="snapcraft-build-and-release-action - passing"></a>
+<a href="https://github.com/Efshal/boilerplate-monorepo/blob/main/.github/workflows/web-build-and-firebase-release.yml"><img src="https://img.shields.io/badge/web--build--and--release--action-passing-2ea44f?logo=Github+Actions&logoColor=gold" alt="web-build-and-release-action - passing"></a>
 </p>
 
 # Guide
