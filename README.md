@@ -27,7 +27,7 @@ Run snapcraft init to setup snap/snapcraft.yaml
 snapcraft init
 ```
 
-Register your app name, following steps from link below
+Register your app name, following steps from this link 
 https://snapcraft.io/docs/registering-your-app-name
 
 
