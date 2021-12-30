@@ -99,8 +99,7 @@ should be stored as a repository secret:
 ![secret](https://github.com/snapcore/action-publish/raw/master/add-secret.jpg)
 
 This will build the project, upload the result to the store, and
-release it to the `edge` channel.  If the `release` input parameter is
-omitted, then the build will not be uploaded but not released.
+release it to the `edge` channel.
 
   
 ## Web Application build and Firebase Deployment
