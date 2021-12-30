@@ -5,30 +5,31 @@
 
 # Guide
 
-## Linux Electron App build and Snapcraft Release
+## Linux Electron App build, Snapcraft Release, and Actions
 
+### Build and Release
 Clone the repo 
 
-```bash
+```sh
 git clone https://github.com/Efshal/boilerplate-monorepo.git
 ```
 
 Run npm install
 
-```bash
+```sh
 npm install
 ```
 
 Install snapcraft for releasing .snap of your electron app to Snapcraft
 
-```bash
+```sh
 sudo apt update
 sudo apt install snapd
 ```
 
 Run snapcraft init to setup snap/snapcraft.yaml
 
-```bash
+```sh
 snapcraft init
 ```
 
@@ -46,14 +47,14 @@ Also set "name" key with registered app name in snapcraft.yaml
 
 Run npm run electron:package to build .snap file of your Electron App
 
-```bash
+```sh
 npm run electron:package
 ```
 A "release" folder will be created in the root directory of your project with .snap file of your electron app. 
 
 Return to the terminal and the location of your .snap file ("release" folder). You now need to authenticate the snapcraft command using your Snapcraft developer account credentials. This can be accomplished with the following:
 
-```bash
+```sh
 snapcraft login
 ```
 
@@ -67,19 +68,46 @@ snapcraft upload --release=stable <snap-file-name>.snap
 Congratulations, your snap has now been released and is available on the Snap Store
 You can also install your app via:
 
-```bash
+```sh
 sudo snap install <app-name>
 ```
 
+### Actions
 
+This is a Github Action that can be used to publish [snap
+packages](https://snapcraft.io) to the Snap Store built by [snapcore](https://github.com/snapcore/action-publish).
+  
+![carbon(9)](https://user-images.githubusercontent.com/42158443/147774289-49e4197d-ddd8-4e00-9a94-e1fbd55a820b.png)
 
+This action is already written in [.github/workflows/sanpcraft.yaml](https://github.com/Efshal/boilerplate-monorepo/blob/main/.github/workflows/snapcraft-publish.yml), you have to first produce data using command below: 
+```sh
+$ snapcraft export-login --snaps=PACKAGE_NAME \
+      --acls package_access,package_push,package_update,package_release \
+      exported.txt
+```
+This will produce a file `exported.txt` containing the login data,
+which should be a multi-line file starting with `[login.ubuntu.com]`.
+  
+In order to make the credentials available to the workflow, they
+should be stored as a repository secret:
+
+1. choose the "Settings" tab.
+2. choose "Secrets" from the menu on the left.
+3. click "Add a new secret".
+4. set the name to `STORE_LOGIN`, and paste the contents of `exported.txt` as the value.
+  
+![secret](https://github.com/snapcore/action-publish/raw/master/add-secret.jpg)
+
+This will build the project, upload the result to the store, and
+release it to the `edge` channel.  If the `release` input parameter is
+omitted, then the build will not be uploaded but not released.
 
   
 ## Web Application build and Firebase Deployment
 
 Build your project first
 
-```bash
+```sh
 ng build
 ```
  
@@ -111,7 +139,7 @@ Answer these questions as done below:
 
 
 Run
- ```bash
+ ```sh
   firebase deploy
  ```
 Select Existing Project option and then select project you made earlier on firebase website.
@@ -142,12 +170,12 @@ To connect fastlane with Play Console, you need to provide appropriate credentia
 To create a key file, follow these steps from the [fastlane official documentation](https://docs.fastlane.tools/getting-started/android/setup/#collect-your-google-credentials). Once your key file is created, you can connect fastlane with your Google Play Console APIs.
 
 1. You can validate your key using the command:
-```bash
+```sh
 fastlane run validate_play_store_json_key json_key:/path/to/your/downloaded/file.json
 ```
   
 2. Next, add your key file to fastlane. Open the fastlane/Appfile and update the json_key_file property with your key file location.
-```bash
+```sh
 json_key_file("./api-key.json")
 ```
   
@@ -160,7 +188,7 @@ Open Fastfile and write lanes for testing, increment version code, and deploying
 
 
 Run 
-```bash
+```sh
 fastlane test
 ```
 
@@ -168,7 +196,7 @@ fastlane test
 
 Versioning is much easier with fastlane; you simply need to add the plugin shown below:
 
-```bash
+```sh
 fastlane add_plugin increment_version_code
 ```
   
@@ -178,7 +206,7 @@ Once the plugin is installed, open your Fastfile and add a lane to increment the
 
   
 Run 
-```bash
+```sh
 fastlane increment_vc
   ```
   
@@ -196,7 +224,7 @@ fastlane increment_vc
 
 
 Run 
-```bash
+```sh
 fastlane deploy
 ```
   
