@@ -156,7 +156,7 @@ Following steps need to be followed:
 
 #### Configuration
 
-1. Firstly install the Firebase in respective OS (mac/windows/linux).
+1. Firstly install the Fastlane in respective OS (mac/windows/linux).
 2. Ruby must be installed in the system for installing fastlane init.
 3. After setting up the fastlane package, now you are good to go towards the real essence of fastlane.
 4. Initialize the fastlane using “fastlane init” in the Android folder present in the root of the project for e.g root/Android/.
