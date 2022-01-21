@@ -25,6 +25,8 @@ Install snapcraft for releasing .snap of your electron app to Snapcraft
 ```sh
 sudo apt update
 sudo apt install snapd
+
+brew install snapcraft
 ```
 
 Run snapcraft init to setup snap/snapcraft.yaml
