@@ -5,6 +5,7 @@
 
 # Guide
 <p>An Angular App templete with Build, Release and CD for Web, Desktop, and Android platform </p>
+
 ## Linux Electron App build, Snapcraft Release, and Actions
 
 ### Build and Release
